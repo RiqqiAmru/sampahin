@@ -1,0 +1,89 @@
+
+inovasi kewirausahaan (jumat, sabtu)
+
+KELOMPOK 6
+-riqqi -> RiqqiAmru
+-ara
+-riza
+-riski
+-devi
+-elsa
+-arya
+-fahmi
+
+SAMPAHIN
+
+DB
+user
+- id user
+- username
+- password
+- tingkatan
+- alamat
+- no_hp
+- email
+- saldo
+
+sampah
+- id
+- jenis
+- nominal
+- margin
+
+penyerahan sampah
+- id
+- tgl
+- id pelanggan
+- id pemulung
+- ket (menunggu, verifikasi pemulung, )
+
+detail penyerahan
+- id penyerahan
+- id sampah
+- jumlah
+- total nominal
+- total margin
+
+penarikan
+- tgl
+- id user
+- penarikan
+- saldo
+
+sampah pemulung
+- id pemulung
+- id sampah
+- total 
+
+pengelola (isi 1 record)
+- nama perusahaan
+- alamat
+- saldo
+
+gudang sampah
+- id sampah
+- total
+
+
+alur aplikasi
+- pengelola mendaftarkan diri ke developer dan mengisikan data pengelola
+- pengelola menerima sampah yang disetorkan pemulung
+- pengelola mencairkan dana saldo pemulung dan pelanggan
+
+- pelanggan mendaftarkan diri ke aplikasi
+- pelanggan mengisikan data diri pelanggan
+- pelanggan melakukan input penyerahan sampah, mengisikan detail sampah, memilih pemulung
+- pelanggan menunggu kedatangan pemulung
+- sampah diserahkan ke pemulung
+- pelanggan menarik saldo sampah, menerima uang
+
+
+- pemulung mendaftarkan diri ke pengelola, dan mendapatkan akun 
+- pemulung menerima pesan permintaan pengambilan sampah
+- pemulung mendatangi alamat pelangan dan verifikasi sampah
+- pemulung mengambil sampah pelanggan
+- pemulung menyerahkan sampah terakumulasi ke pengelola
+- pemulung menarik saldo sampah, menerima komisi
+
+
+
