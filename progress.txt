@@ -36,6 +36,8 @@ penyerahan sampah
 - id pelanggan
 - id pemulung
 - ket (menunggu, verifikasi pemulung, )
+- gt nominal
+- gt margin
 
 detail penyerahan
 - id penyerahan
