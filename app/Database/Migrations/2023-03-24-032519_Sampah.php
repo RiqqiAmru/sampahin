@@ -11,8 +11,8 @@ class Sampah extends Migration
         $this->forge->addField([
             'sampah_id' => [
                 'type'           => 'INT',
-                'unsigned'       => true,
                 'auto_increment' => true,
+                'constraint'       => 11
             ],
             'kategori_botol' => [
                 'type'       => 'VARCHAR',

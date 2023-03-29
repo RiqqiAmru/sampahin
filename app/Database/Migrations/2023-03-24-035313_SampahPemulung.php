@@ -20,7 +20,7 @@ class SampahPemulung extends Migration
             ],
         ]);
         $this->forge->addForeignKey('sampah_id', 'sampah', 'sampah_id', '', '', 'id_sampah_di_gudang_pemulung');
-        $this->forge->addForeignKey('pemulung_id', 'pemulung', 'pemulung_id', '', '', 'id_pemulung_di_gudang_pemulung');
+        $this->forge->addForeignKey('pemulung_id', 'user', 'user_id', '', '', 'id_pemulung_di_gudang_pemulung');
         $this->forge->createTable('sampah_pemulung');
     }
 

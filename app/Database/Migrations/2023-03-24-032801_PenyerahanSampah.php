@@ -11,8 +11,8 @@ class PenyerahanSampah extends Migration
         $this->forge->addField([
             'penyerahan_id' => [
                 'type'           => 'INT',
-                'unsigned'       => true,
                 'auto_increment' => true,
+                'constraint'       => 11
             ],
             'tgl' => [
                 'type'       => 'DATETIME',

@@ -11,8 +11,8 @@ class Usesr extends Migration
         $this->forge->addField([
             'user_id' => [
                 'type'           => 'INT',
-                'unsigned'       => true,
                 'auto_increment' => true,
+                'constraint'    => 11
             ],
             'username' => [
                 'type'       => 'VARCHAR',
