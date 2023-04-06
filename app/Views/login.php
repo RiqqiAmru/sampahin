@@ -11,6 +11,9 @@
 </head>
 
 <body>
+  <?php if (empty($error)) {
+    $error = '';
+  } ?>
   <div class="container">
     <div class="row justify-content-center mt-5">
       <div class="col-md-6">
@@ -22,16 +25,14 @@
             <form action="<?= base_url('login/valid') ?>" method="post">
               <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" required name="username">
+                <input type="text" class="form-control <?= ($error) ? 'is-invalid' : 'valid'; ?>" id="username" required name="username">
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" required name="pass">
-              </div>
-              <div id="password" class="invalid-feedback">
-                <? if (!empty($error)) {
-                  echo $error;
-                } ?>
+                <input type="password" class="form-control <?= ($error) ? 'is-invalid' : 'valid'; ?>" id="password" required name="pass">
+                <div class="invalid-feedback" id="passwordFeddback">
+                  <?= $error ?>
+                </div>
               </div>
               <div class="d-grid gap-2">
                 <button type="submit" class="btn btn-primary">Log in</button>
@@ -42,6 +43,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
