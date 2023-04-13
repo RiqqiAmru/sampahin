@@ -24,8 +24,15 @@ class PenyerahanSampah extends Migration
                 'type'       => 'INT',
             ],
             'ket' => [
-                'type'       => 'VARCHAR',
+                'type'       => 'VARCHAR', //menunggu, selesai, dibatalkan
                 'constraint'    => 20
+            ],
+            'deskripsi' => [
+                'type'       => 'VARCHAR',
+                'constraint'    => 255
+            ],
+            'waktu' => [
+                'type'       => 'DATETIME',
             ],
             'gt_nominal' => [
                 'type'       => 'INT',

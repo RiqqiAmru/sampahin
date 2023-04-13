@@ -31,10 +31,14 @@ class Login extends BaseController
 
             if ($user) {
                 $hashed_password = $user['password'];
+                var_dump($hashed_password);
+                var_dump($password);
+                var_dump(password_verify($password, $hashed_password));
                 if (password_verify($password, $hashed_password)) {
                     // cek tingkatannya
                     $session = session();
                     $session->set('tingkatan', $user['tingkatan']);
+                    $session->set('username', $user['username']);
                     // Jika username dan password cocok, redirect ke halaman selanjutnya
                     return redirect()->to('dashboard');
                 } else {

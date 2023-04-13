@@ -22,7 +22,7 @@ class Usesr extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '255',
             ],
-            'tingkatan' => [
+            'tingkatan' => [ //penyetor, pemulung, pengelola
                 'type'       => 'VARCHAR',
                 'constraint' => '20',
             ],
